@@ -4,11 +4,11 @@ phases:
     commands:
       - cd src/
       - echo Restore started on `date`
-      - dotnet restore  dotnet-codedeploy.csproj
+      - dotnet restore  visual--Dotnetapplication
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c release -o ./build_output dotnet-codedeploy.csproj
+      - dotnet publish -c release -o ./build_output visual--Dotnetapplication
 artifacts:
   files:
     - '**/*'

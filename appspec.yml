@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: C:\Users\Administrator\Desktop\dotnetapp
+    destination: C:\Users\Administrator\Desktop\visual--Dotnetapplication
 hooks:
     ApplicationStop:
       - location: /codedeploy/deploy-scripts/application_stop.sh

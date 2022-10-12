@@ -2,7 +2,6 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - cd src/..
       - echo Restore started on `date`
       - dotnet restore  visual--Dotnetapplication
   build:

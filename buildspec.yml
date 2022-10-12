@@ -3,6 +3,7 @@ phases:
   pre_build:
     commands:
       - cd src
+      - echo "hai"
       - echo Restore started on `date`
       - dotnet restore  visual--Dotnetapplication
   build:

@@ -2,13 +2,12 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo "hai"
       - echo Restore started on `date`
-      - dotnet restore  'visual--Dotnetapplication'
+      - dotnet restore  WebApplication143.csproj
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c release -o ./build_output 'visual--Dotnetapplication'
+      - dotnet publish -c release -o ./build_output WebApplication143.csproj
 artifacts:
   files:
     - '**/*'

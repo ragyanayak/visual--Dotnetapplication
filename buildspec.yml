@@ -7,10 +7,10 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c release -o ./build_output WebApplication143.csproj
-      - echo 'Hai'
+      - dotnet build WebApplication143.csproj
+      - dotnet publish -c release  WebApplication143.csproj
 artifacts:
   files:
     - '**/*'
-    - codedeploy/deploy-scripts/**
+   # - codedeploy/deploy-scripts/**
     - appspec.yml
